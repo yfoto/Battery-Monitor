@@ -6876,7 +6876,9 @@ Flotr.addPlugin('spreadsheet', {
     
     // First row : series' labels
     var html = ['<table class="flotr-datagrid"><tr class="first-row">'];
-    html.push('<th>&nbsp;</th>');
+    html.push('<th>');
+    html.push(this.options.xaxis.title);
+    html.push('</th>');
     _.each(s, function(serie,i){
       html.push('<th scope="col">'+(serie.label || String.fromCharCode(65+i))+'</th>');
       colgroup.push('<col />');
