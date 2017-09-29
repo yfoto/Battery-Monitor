@@ -4757,7 +4757,7 @@ Flotr.addType('markers', {
     dim.height = Math.floor(dim.height+margin*2);
 
          if (options.position.indexOf('c') != -1) left -= dim.width/2 + margin;
-    else if (options.position.indexOf('l') != -1) left -= dim.width;
+    else if (options.position.indexOf('l') != -1) left -= dim.width*1.5;
     
          if (options.position.indexOf('m') != -1) top -= dim.height/2 + margin;
     else if (options.position.indexOf('t') != -1) top -= dim.height + options.verticalMargin;
