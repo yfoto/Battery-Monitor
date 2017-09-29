@@ -7165,7 +7165,7 @@ Flotr.addPlugin('titles', {
         style = Flotr.getBestTextAlign(style.angle, style);
         Flotr.drawText(
           ctx, a.y2.options.title,
-          this.plotOffset.left + this.plotWidth + a.y2.maxLabel.width + 2 * margin, 
+          this.plotOffset.left + this.plotWidth + a.y2.maxLabel.width + 6 * margin, 
           this.plotOffset.top + this.plotHeight / 2,
           style
         );
