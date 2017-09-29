@@ -4767,10 +4767,10 @@ Flotr.addType('markers', {
     top = Math.floor(top)+0.5;
     
     if(options.fill)
-      context.fillRect(left, top, dim.width*2, dim.height);
+      context.fillRect(left, top, dim.width*1.5, dim.height);
       
     if(options.stroke)
-      context.strokeRect(left, top, dim.width*2, dim.height);
+      context.strokeRect(left, top, dim.width*1.5, dim.height);
     
     if (isImage(label))
       context.drawImage(label, parseInt(left+margin, 10), parseInt(top+margin, 10));
